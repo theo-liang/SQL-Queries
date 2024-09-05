@@ -1,8 +1,5 @@
-```SQL
-SELECT 					
-		name,			
-		COUNT(R.inventory_id) AS film_inventory,			
-		SUM(amount) AS revenue			
+```sql
+SELECT name, COUNT(R.inventory_id) AS film_inventory, SUM(amount) AS revenue			
 FROM payment P					
 INNER JOIN rental R ON P.rental_id = R.rental_id					
 INNER JOIN inventory I ON R.inventory_id = I.inventory_id					

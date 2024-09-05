@@ -1,3 +1,4 @@
+```sql
 SELECT		
 	D.country,	
 	C.city,	
@@ -19,4 +20,5 @@ WHERE D.country IN
 	)	
 GROUP BY country, city		
 ORDER BY customer_count DESC		
-LIMIT 10		
+LIMIT 10;
+```		

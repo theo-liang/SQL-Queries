@@ -1,3 +1,4 @@
+```sql
 SELECT	
 	MIN(release_year) AS oldest_release_year,
 	MAX(release_year) AS newest_release_year,
@@ -21,4 +22,5 @@ SELECT
 	MODE() WITHIN GROUP (ORDER BY rating) AS modal_rating,
 	MODE() WITHIN GROUP (ORDER BY special_features) AS modal_special_features,
 	MODE() WITHIN GROUP (ORDER BY fulltext) AS modal_fulltext
-FROM film	
+FROM film;	
+```

@@ -8,5 +8,5 @@ INNER JOIN film_category FC ON F.film_id = FC.film_id
 INNER JOIN category C ON FC.category_id = C.category_id					
 GROUP BY name					
 ORDER BY revenue ASC					
-LIMIT 10
+LIMIT 10;
 ```
